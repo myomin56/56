@@ -1,7 +1,7 @@
 apiVersion: apps/v1 #version of the API to use
 kind: Deployment #What kind of object we're deploying
 metadata: #information about our object we're deploying
-  name: service-deployment #Name of the deployment
+  name: noderedservice-deployment #Name of the deployment
   labels: #A tag on the deployments created
     app: nodered
 spec: #specifications for our object
@@ -30,7 +30,7 @@ spec: #specifications for our object
   - name: http
     port: 1880
     targetPort: 1880
-    nodePort: 30003
+    nodePort: 30004
     protocol: TCP
   selector: #Label selector used to identify pods 
     app: nodered
