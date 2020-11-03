@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nodered134-app
+  name: nodered56-app
   labels:
     app: nodered
 spec:
@@ -28,4 +28,4 @@ spec:
         - name: hostvol
           persistentVolumeClaim:
             # PVC name you created
-            claimName: nodered-pvc134
+            claimName: nodered-pvc56
